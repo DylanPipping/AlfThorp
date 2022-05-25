@@ -9,19 +9,19 @@ public class QuestManager : MonoBehaviour
     public static int SubQuestNumber;
     public int InternalSubNumber;
 
-    public GameObject Main_Mark;
-    public GameObject Objective01Mark;
-    public GameObject Objective02Mark;
-    public GameObject Objective03Mark;
-    public GameObject Pointer;
+    //public GameObject Main_Mark;
+    //public GameObject Objective01Mark;
+    //public GameObject Objective02Mark;
+    //public GameObject Objective03Mark;
+    //public GameObject Pointer;
 
     void Update()
     {
         InternalQuestNumber = ActiveQuestNumber;
         InternalSubNumber = SubQuestNumber;
-        Pointer.transform.LookAt(Main_Mark.transform);
+        //Pointer.transform.LookAt(Main_Mark.transform);
 
-        if(InternalSubNumber == 0)
+        /*if(InternalSubNumber == 0)
         {
             Pointer.SetActive(false);
         }
@@ -41,7 +41,7 @@ public class QuestManager : MonoBehaviour
         if (InternalSubNumber == 3)
         {
             Main_Mark.transform.position = Objective03Mark.transform.position;
-        }
+        }*/
     }
 
 }

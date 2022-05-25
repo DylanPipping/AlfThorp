@@ -47,7 +47,7 @@ public class Q001_Ob02 : MonoBehaviour
             if(TheDistance <= 3)
             {
                 this.GetComponent<BoxCollider>().enabled = false;
-                TreasureChest.GetComponent<Animation>().Play("Q01_ChestOpen");
+                TreasureChest.GetComponent<Animation>().Play("Q01_chest_open");
                 TakeSword.SetActive(true);
                 CloseObjective = 3;
                 ActionText.SetActive(false);
